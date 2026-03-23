@@ -13,4 +13,18 @@ def check_win(player,computer):
     print(f"You chose {player}, computer chose {computer}")
     if player == computer:
         return "It's a Tie!"
-check_win("rock","paper")
+    elif player == "rock":
+        if computer == "scissor":
+            return "Rock smashed scissor! You win!"
+        else:
+            return "Paper covers rock! You lose."
+    elif player == "paper":
+        if computer == "rock":
+            return "Paper covers rock! You win!"
+        else:
+            return "Scissor cuts paper! You lose."
+    else:
+        if computer == "paper":
+            return "Scissor cuts paper! You win."
+        else:
+            return "Rock smashed scissor! You lose."
